@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UserInterface/shared/card_info_widget.dart/card_info_widget.dart';
+import 'package:my_app/UI/shared/card_info_widget.dart/card_info_widget.dart';
 
 class RulesListWidget extends StatelessWidget {
   const RulesListWidget({Key? key}) : super(key: key);

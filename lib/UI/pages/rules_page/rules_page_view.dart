@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UserInterface/pages/rules_page/components/architecture_list_widget/architecture_list.dart';
-import 'package:my_app/UserInterface/pages/rules_page/components/rules_list_widget/rules_list_widget.dart';
-import 'package:my_app/UserInterface/pages/rules_page/rules_page_viewmodel.dart';
-import 'package:my_app/UserInterface/shared/appbar_widget/appbar_widget.dart';
+import 'package:my_app/UI/pages/rules_page/rules_page_viewmodel.dart';
+import 'package:my_app/UI/shared/appbar_widget/appbar_widget.dart';
 import 'package:my_app/utils/enum.dart';
 import 'package:stacked/stacked.dart';
+
+import 'components/architecture_list_widget/architecture_list.dart';
+import 'components/rules_list_widget/rules_list_widget.dart';
 
 class RulesPageView extends StatelessWidget {
   const RulesPageView({Key? key}) : super(key: key);

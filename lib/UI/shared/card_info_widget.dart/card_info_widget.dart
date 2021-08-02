@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UserInterface/shared/divider_widget/divider_widget.dart';
 
 class CardInfoWidget extends StatelessWidget {
   final String title;

@@ -9,8 +9,8 @@
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
-import '../UserInterface/pages/initial_page/initial_page_view.dart';
-import '../UserInterface/pages/rules_page/rules_page_view.dart';
+import '../UI/pages/initial_page/initial_page_view.dart';
+import '../UI/pages/rules_page/rules_page_view.dart';
 
 class Routes {
   static const String initialPageView = '/';

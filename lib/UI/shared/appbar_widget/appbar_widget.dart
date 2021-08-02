@@ -26,7 +26,7 @@ class AppBarWidget extends PreferredSize {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Bem Vinda, ",
+                          "Bem Vindo(a), ",
                           style: TextStyle(fontSize: 18, color: Colors.white),
                         ),
                         Text(

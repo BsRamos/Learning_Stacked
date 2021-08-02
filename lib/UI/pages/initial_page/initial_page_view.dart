@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/UserInterface/shared/appbar_widget/appbar_widget.dart';
+import 'package:my_app/UI/shared/appbar_widget/appbar_widget.dart';
+
 import 'package:my_app/utils/enum.dart';
 import 'package:stacked/stacked.dart';
 
@@ -13,6 +14,7 @@ class InitialPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<InitialPageViewModel>.reactive(
       viewModelBuilder: () => InitialPageViewModel(),
+      onModelReady: (model) => model.initialise(),
       builder: (context, model, child) => model.isBusy
           ? Container(
               color: Colors.white,
@@ -24,7 +26,7 @@ class InitialPageView extends StatelessWidget {
             )
           : Scaffold(
               appBar: AppBarWidget(
-                name: "Guilda Mobile",
+                name: model.name,
               ),
               body: Container(
                 width: MediaQuery.of(context).size.width,
@@ -34,11 +36,11 @@ class InitialPageView extends StatelessWidget {
                       height: 40,
                     ),
                     Text(
-                      "Ei, você, você ai mesmo,",
+                      "Ei, você, ${model.login},",
                       style: TextStyle(fontSize: 20),
                     ),
                     Text(
-                      "seseja aprender sobre o Stacked?",
+                      "deseja aprender sobre o Stacked?",
                       style: TextStyle(fontSize: 20),
                     ),
                     SizedBox(height: 50),
